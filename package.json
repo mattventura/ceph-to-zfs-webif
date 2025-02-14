@@ -1,0 +1,26 @@
+{
+    "name": "ceph-to-zfs-webif",
+    "type": "module",
+    "version": "1.0.0",
+    "devDependencies": {
+        "@eslint/js": "^9.13.0",
+        "@stylistic/eslint-plugin-js": "^2.9.0",
+        "@types/eslint": "^9.6.1",
+        "eslint": "^9.13.0",
+        "eslint-plugin-named-import-spacing": "^1.0.3",
+        "html-webpack-plugin": "^5.6.2",
+        "ts-loader": "^9.5.1",
+        "ts-node": "^10.9.2",
+        "typescript": "^5.6.3",
+        "typescript-eslint": "^8.10.0",
+        "webpack": "^5.96.1",
+        "webpack-cli": "^6.0.1",
+        "webpack-dev-server": "^5.1.0"
+    },
+    "scripts": {
+        "build": "lessc --source-map ./src/style.less out/style.css && webpack --mode=development",
+        "prodbuild": "lessc --source-map ./src/style.less out/style.css && webpack --mode=production",
+        "serve": "npx webpack serve",
+        "lint": "npx eslint ./src/**/*.ts --exit-on-fatal-error --max-warnings 0"
+    }
+}

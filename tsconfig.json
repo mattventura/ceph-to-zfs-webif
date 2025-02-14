@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es2022",
+    "strict": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "alwaysStrict": true,
+    "noImplicitReturns": true,
+    "outDir": "build"
+  },
+  "include": ["src/ts"],
+  "exclude": ["node_modules"]
+}
